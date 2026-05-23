@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicy Face Medical Esthetics | Denver, CO</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar bg-dark text-white py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <small><i class="fas fa-phone-alt me-2"></i> (303) 555-0199</small>
+                    <small class="ms-3"><i class="fas fa-envelope me-2"></i> info@juicyface.com</small>
+                </div>
+                <div class="col-md-6 text-end">
+                    <small><i class="fas fa-map-marker-alt me-2"></i> 3000 E 1st Ave Unit 114, Denver, CO 80206</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <span class="brand-icon"><i class="fas fa-spa"></i></span>
+                <span class="brand-text">Juicy Face</span> -->
+                <img src="img/logo.png" alt="" height="60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#treatments-by-age">Treatments by Age</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="appointment.html" class="btn btn-primary ms-lg-3">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center p-5">
+                <div class="col-lg-6 hero-content">
+                    <span class="subtitle">Medical Esthetics in Denver, CO</span>
+                    <h1 class="display-3 fw-bold mb-4">Welcome to <span class="text-highlight">Juicy Face</span></h1>
+                    <p class="lead mb-4">Delivering customized plans of care for your aesthetic needs with emphasis on
+                        patient safety and satisfaction. Board-certified physician with 12+ years of experience.</p>
+                    <div class="hero-buttons">
+                        <a href="appointment.html" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-calendar-check me-2"></i>Book Now
+                        </a>
+                        <a href="#services" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-play-circle me-2"></i>Our Services
+                        </a>
+                    </div>
+                    <div class="hero-features mt-5">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <i class="fas fa-certificate fa-2x mb-2"></i>
+                                <p class="small">Board Certified</p>
+                            </div>
+                            <div class="col-4 text-center">
+                                <i class="fas fa-shield-alt fa-2x mb-2"></i>
+                                <p class="small">Safe & Effective</p>
+                            </div>
+                            <div class="col-4 text-center">
+                                <i class="fas fa-heart fa-2x mb-2"></i>
+                                <p class="small">Patient First</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image"></div>
+                        <div class="floating-card card-1">
+                            <i class="fas fa-star text-warning"></i>
+                            <span>5.0 Rating</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-award text-primary"></i>
+                            <span>12+ Years Exp.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Cards -->
+    <section class="quick-info py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="info-card featured  h-100">
+                        <div class="icon-box">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4>How Can We Help You?</h4>
+                        <p>Not sure which treatment is right for you? Schedule a free consultation with Dr. Balla to
+                            discuss your aesthetic goals.</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="fas fa-check text-primary me-2"></i>Personalized Treatment Plans</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Anti-Aging Solutions</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Skin Rejuvenation</li>
+                            <li><i class="fas fa-check text-primary me-2"></i>Body Contouring</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card featured h-100">
+                        <div class="icon-box">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Meet Dr. Purnima Balla, MD</h4>
+                        <p>Board-certified internal medicine physician with 12+ years of experience. Affiliated with
+                            Swedish Medical Center.</p>
+                        <div class="doctor-preview mt-3">
+                            <div class="d-flex align-items-center">
+                                <div class="doctor-avatar"></div>
+                                <div class="ms-3">
+                                    <p class="mb-0 fw-bold">Dr. Purnima Balla</p>
+                                    <small class="text-muted">Internal Medicine</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card dark h-100">
+                        <div class="light-icon-box">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4>Consultation With Our Doctor</h4>
+                        <p>Ready to start your aesthetic journey? Contact us today for a consultation.</p>
+                        <div class="contact-box mt-3">
+                            <a href="tel:3035550199" class="btn btn-light w-100">
+                                <i class="fas fa-phone-alt me-2"></i>(303) 555-0199
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section  ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-images">
+                        <div class="about-img main-img"></div>
+                        <div class="about-img secondary-img"></div>
+                        <div class="experience-badge">
+                            <span class="years">12+</span>
+                            <span class="text">Years of<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="section-subtitle">About Juicy Face</span>
+                    <h2 class="section-title">We Provide The Best Medical Esthetics Since 2012</h2>
+                    <p class="text-muted">Physician-owned and operated, ensuring high standards of safety and clinical
+                        excellence. We focus on restoring and improving natural beauty through nonsurgical medical
+                        aesthetic treatments.</p>
+
+                    <div class="features-list mt-4">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Modern Technology</h5>
+                                <p class="small text-muted">State-of-the-art equipment including Morpheus8, IPL, and RF
+                                    Microneedling</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Affordable Pricing</h5>
+                                <p class="small text-muted">Competitive rates with VIP membership deals and package
+                                    discounts</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h5>Patient Safety First</h5>
+                                <p class="small text-muted">Board-certified physician ensuring the highest safety
+                                    standards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section   bg-light">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                        <h3 class="counter" data-target="2000">0</h3>
+                        <p>Happy Patients</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h3 class="counter" data-target="5000">0</h3>
+                        <p>Procedures Done</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                        <h3 class="counter" data-target="12">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                        <h3 class="counter" data-target="15">0</h3>
+                        <p>Services Offered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section  ">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Our Services</span>
+                <h2 class="section-title">What Services We Offer</h2>
+                <p class="text-muted">Comprehensive medical esthetic treatments tailored to your unique needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-image morpheus8-img"></div>
+                        <div class="service-content">
+                            <h4><i class="fas fa-bolt   me-2"></i>Morpheus8</h4>
+                            <p>Revolutionary RF microneedling treatment for face and body. Stimulates collagen
+                                production for tighter, smoother skin.</p>
+                            <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-image botox-img"></div>
+                        <div class="service-content">
+                            <h4><i class="fas fa-syringe   me-2"></i>Botox</h4>
+                            <p>Cosmetic procedure to reduce wrinkles and fine lines. Quick, effective, and minimally
+                                invasive anti-aging solution.</p>
+                            <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-image fillers-img"></div>
+                        <div class="service-content">
+                            <h4><i class="fas fa-fill-drip   me-2"></i>Dermal Fillers</h4>
+                            <p>Restore volume and reduce signs of aging. Includes Sculptra, Radiesse, and hyaluronic
+                                acid fillers.</p>
+                            <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-image peels-img"></div>
+                        <div class="service-content">
+                            <h4><i class="fas fa-flask   me-2"></i>VI Peels</h4>
+                            <p>Safe and effective chemical peels for skin tone improvement. Treats acne,
+                                hyperpigmentation, and aging skin.</p>
+                            <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-image ipl-img"></div>
+                        <div class="service-content">
+                            <h4><i class="fas fa-sun   me-2"></i>IPL Photo Facial</h4>
+                            <p>Intense Pulsed Light treatment for sun damage, age spots, and vascular lesions.
+                                Non-invasive skin rejuvenation.</p>
+                            <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card">
+                        <div class="service-image microneedling-img"></div>
+                        <div class="service-content">
+                            <h4><i class="fas fa-magic   me-2"></i>RF Microneedling</h4>
+                            <p>Innovative Skinpen microneedling with radiofrequency. Improves skin texture, scars, and
+                                promotes collagen.</p>
+                            <a href="#" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="additional-services">
+                        <h4 class="text-center mb-4">Additional Specialized Services</h4>
+                        <div class="row g-3">
+                            <div class="col-md-3 col-6">
+                                <div class="extra-service">
+                                    <i class="fas fa-prescription-bottle-alt"></i>
+                                    <span>AviClear Acne</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="extra-service">
+                                    <i class="fas fa-weight"></i>
+                                    <span>Weight Loss (GLP-1)</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="extra-service">
+                                    <i class="fas fa-arrows-alt-v"></i>
+                                    <span>PDO Thread Lift</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6">
+                                <div class="extra-service">
+                                    <i class="fas fa-gem"></i>
+                                    <span>Sculptra & Radiesse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatments by Age Section -->
+    <section id="treatments-by-age" class="age-treatments   bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Personalized Care</span>
+                <h2 class="section-title">Treatments by Age Group</h2>
+                <p class="text-muted">Customized treatment plans for every stage of life</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="age-card">
+                        <div class="age-number">20s</div>
+                        <h5>Prevention</h5>
+                        <ul class="list-unstyled text-start">
+                            <li>Botox Prevention</li>
+                            <li>VI Peels</li>
+                            <li>Skinpen</li>
+                            <li>IPL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="age-card">
+                        <div class="age-number">30s</div>
+                        <h5>Early Treatment</h5>
+                        <ul class="list-unstyled text-start">
+                            <li>Botox</li>
+                            <li>Fillers</li>
+                            <li>Morpheus8</li>
+                            <li>Chemical Peels</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="age-card">
+                        <div class="age-number">40s</div>
+                        <h5>Restoration</h5>
+                        <ul class="list-unstyled text-start">
+                            <li>Morpheus8</li>
+                            <li>Sculptra</li>
+                            <li>PDO Threads</li>
+                            <li>IPL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="age-card">
+                        <div class="age-number">50s</div>
+                        <h5>Rejuvenation</h5>
+                        <ul class="list-unstyled text-start">
+                            <li>RF Microneedling</li>
+                            <li>Fillers</li>
+                            <li>Thread Lift</li>
+                            <li>VI Peels</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="age-card">
+                        <div class="age-number">60s</div>
+                        <h5>Maintenance</h5>
+                        <ul class="list-unstyled text-start">
+                            <li>Morpheus8</li>
+                            <li>Radiesse</li>
+                            <li>Botox</li>
+                            <li>Skin Tightening</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="age-card">
+                        <div class="age-number">70s+</div>
+                        <h5>Care</h5>
+                        <ul class="list-unstyled text-start">
+                            <li>Gentle Peels</li>
+                            <li>Light Botox</li>
+                            <li>Skin Care</li>
+                            <li>Consultation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dark CTA Section -->
+    <section class="cta-section ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-3">Providing World-Class Care to Patients Around Denver</h2>
+                    <p class="text-white-50 mb-0">Serving Cherry Creek, Ruby Hill Park, Park Hill, Lakewood, Coors
+                        Field, Edgewater, Globeville, Village East, and surrounding areas.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                    <a href="appointment.html" class="btn btn-light btn-lg position-relative z-5">
+                        <i class="fas fa-calendar-alt me-2"></i>Schedule Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section  ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="process-image-wrapper">
+                        <div class="process-image"></div>
+                        <div class="floating-badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free Consultation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="section-subtitle">Our Process</span>
+                    <h2 class="section-title">The Procedure for Medical Esthetics at Juicy Face</h2>
+                    <p class="text-muted">Your journey to enhanced natural beauty starts here. We ensure a comfortable,
+                        safe, and effective experience.</p>
+
+                    <div class="process-steps mt-4">
+                        <div class="process-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h5>Make Appointment</h5>
+                                <p class="small text-muted">Schedule online or call us. Mon-Sat: 9am-5pm</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h5>Meet With Our Doctor</h5>
+                                <p class="small text-muted">Consultation with Dr. Balla to discuss your goals</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h5>General Body & Skin Check</h5>
+                                <p class="small text-muted">Comprehensive assessment for personalized treatment</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h5>Get a New Version of Yourself</h5>
+                                <p class="small text-muted">Treatment and follow-up care for optimal results</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section   bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What Our Patients Say</h2>
+            </div>
+            <div class="swiper testimonial-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Dr. Balla is amazing! She took the time to understand my
+                                concerns and created a treatment plan that exceeded my expectations. My skin has never
+                                looked better!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face"
+                                        alt="Sarah M." loading="lazy">
+                                </div>
+                                <div class="author-info">
+                                    <h6>Sarah M.</h6>
+                                    <small>Denver, CO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The Morpheus8 treatment was life-changing. Dr. Balla's
+                                expertise and gentle approach made the experience comfortable. Highly recommend Juicy
+                                Face!"</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+                                        alt="Jennifer K." loading="lazy">
+                                </div>
+                                <div class="author-info">
+                                    <h6>Jennifer K.</h6>
+                                    <small>Cherry Creek, CO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Professional, clean, and welcoming environment. The Botox
+                                results are natural and exactly what I wanted. Dr. Balla truly listens to her patients."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+                                        alt="Amanda R." loading="lazy">
+                                </div>
+                                <div class="author-info">
+                                    <h6>Amanda R.</h6>
+                                    <small>Lakewood, CO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Best medical spa in Denver! The weight loss program with GLP-1
+                                has helped me achieve my goals. Dr. Balla monitors everything safely."</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                                        alt="Michael T." loading="lazy">
+                                </div>
+                                <div class="author-info">
+                                    <h6>Michael T.</h6>
+                                    <small>Park Hill, CO</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section  ">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Latest News</span>
+                <h2 class="section-title">Blog & Articles</h2>
+                <p class="text-muted">Stay informed about the latest in medical esthetics</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <div class="blog-image blog-1"></div>
+                        <div class="blog-content">
+                            <span class="blog-category">Morpheus8</span>
+                            <h5>Why Morpheus8 is the Most Popular Skin Tightening Treatment</h5>
+                            <p class="small text-muted">Discover why this revolutionary RF microneedling treatment is
+                                transforming skin rejuvenation...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <div class="blog-image blog-2"></div>
+                        <div class="blog-content">
+                            <span class="blog-category">Botox</span>
+                            <h5>Botox Myths vs Facts: What You Need to Know</h5>
+                            <p class="small text-muted">Separating fact from fiction about the world's most popular
+                                cosmetic procedure...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <div class="blog-image blog-3"></div>
+                        <div class="blog-content">
+                            <span class="blog-category">Weight Loss</span>
+                            <h5>GLP-1 Weight Loss: Tirzepatide and Semaglutide Guide</h5>
+                            <p class="small text-muted">Everything you need to know about medical weight loss injections
+                                at Juicy Face...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <div class="blog-image blog-4"></div>
+                        <div class="blog-content">
+                            <span class="blog-category">Skin Care</span>
+                            <h5>10 Things You Must Know About VI Peels</h5>
+                            <p class="small text-muted">Preparing for your chemical peel? Here's what every patient
+                                should know before treatment...</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section   bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3>Join Our VIP List</h3>
+                    <p class="text-muted mb-4">Get exclusive deals like "Microneedling Buy 2 Get 1 Free" and stay
+                        updated with our latest promotions.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane me-2"></i>Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking/Contact Section with Google Map -->
+    <section id="booking" class="booking-section  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <span class="section-subtitle">Visit Us</span>
+                    <h2 class="section-title">Find Our Clinic</h2>
+                    <p class="text-muted">Located in the heart of Cherry Creek North, Denver. Visit us for your
+                        consultation and aesthetic treatments.</p>
+
+                    <div class="contact-info mt-4">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h6>Address</h6>
+                                <p>3000 E 1st Ave Unit 114<br>Denver, CO 80206</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h6>Hours</h6>
+                                <p>Mon - Sat: 9:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h6>Phone</h6>
+                                <p>(303) 555-0199</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <p>info@juicyface.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-yelp"></i></a>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="appointment.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-calendar-check me-2"></i>Book Appointment Online
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="map-wrapper">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.1!2d-104.959!3d39.723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7e2d5b8e1a6f%3A0x1234567890abcdef!2s3000%20E%201st%20Ave%20Unit%20114%2C%20Denver%2C%20CO%2080206!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                                width="100%" height="100%" style="border:0; border-radius: 14px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                title="Juicy Face Medical Esthetics Location - 3000 E 1st Ave Unit 114, Denver, CO 80206">
+                            </iframe>
+                        </div>
+                        <div class="map-badge">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Cherry Creek North, Denver</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="service-areas   bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-4">
+                <span class="section-subtitle">Service Areas</span>
+                <h2 class="section-title">We Serve Denver & Surrounding Areas</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="areas-grid">
+                        <span class="area-tag">Denver</span>
+                        <span class="area-tag">Cherry Creek</span>
+                        <span class="area-tag">Ruby Hill Park</span>
+                        <span class="area-tag">Park Hill</span>
+                        <span class="area-tag">Lakewood</span>
+                        <span class="area-tag">Coors Field</span>
+                        <span class="area-tag">Edgewater</span>
+                        <span class="area-tag">Globeville</span>
+                        <span class="area-tag">Village East</span>
+                        <span class="area-tag">Glendale</span>
+                        <span class="area-tag">Aurora</span>
+                        <span class="area-tag">Englewood</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white  ">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <!-- <span class="brand-icon"><i class="fas fa-spa"></i></span>
+                        <span class="brand-text">Juicy Face</span> -->
+                        <img src="img/logo2.png" alt="" height="80px">
+                    </div>
+                    <p class="mt-3 text-white-50">Medical Esthetics in Denver, CO. Board-certified physician providing
+                        safe, effective aesthetic treatments since 2012.</p>
+                    <div class="footer-social mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled text-start footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled text-start footer-links">
+                        <li><a href="#">Morpheus8</a></li>
+                        <li><a href="#">Botox</a></li>
+                        <li><a href="#">Fillers</a></li>
+                        <li><a href="#">VI Peels</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Make Appointment</h5>
+                    <p class="text-white-50"><i class="fas fa-phone-alt me-2"></i>(303) 555-0199</p>
+                    <p class="text-white-50"><i class="fas fa-envelope me-2"></i>info@juicyface.com</p>
+                    <p class="text-white-50"><i class="fas fa-clock me-2"></i>Mon-Sat: 9AM - 5PM</p>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white-50 small">&copy; 2024 Juicy Face Medical Esthetics. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-white-50 small">Physician-owned and operated</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 text-center">
+                    <p class="emergency-note small text-warning mb-0">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        In case of a life-threatening emergency, immediately call 911.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

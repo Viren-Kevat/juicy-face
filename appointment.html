@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Juicy Face Medical Esthetics</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="appointment.css">
+    <base target="_blank">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar bg-dark text-white py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <small><i class="fas fa-phone-alt me-2"></i> (303) 555-0199</small>
+                    <small class="ms-3"><i class="fas fa-envelope me-2"></i> info@juicyface.com</small>
+                </div>
+                <div class="col-md-6 text-end">
+                    <small><i class="fas fa-map-marker-alt me-2"></i> 3000 E 1st Ave Unit 114, Denver, CO 80206</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="" height="60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#treatments-by-age">Treatments by Age</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+                <a href="appointment.html" class="btn btn-primary ms-lg-3 ">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Booking Section -->
+    <main class="booking-page">
+        <div class="container">
+            <div class="booking-grid">
+
+                <!-- LEFT: Booking Form -->
+                <div class="booking-form-section">
+                    <div class="page-header">
+                        <div class="page-label">Schedule Your Visit</div>
+                        <h1 class="h1">Book Your <em class="">Appointment</em></h1>
+                        <p class="page-subtitle">Fill out the form below and our team will confirm your session within 1
+                            business day. For urgent concerns, call us directly at <strong
+                                style="color: var(--primary-color);">(303) 555-0199</strong>.</p>
+                    </div>
+
+                    <form id="booking-form" novalidate style="position: relative;">
+                        <!-- Success Overlay -->
+                        <div class="success-overlay" id="success-overlay">
+                            <div class="success-content">
+                                <div class="success-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        <path d="M9 16l2 2 4-4"></path>
+                                    </svg>
+                                </div>
+                                <h2 class="h2" style="margin-bottom: 16px;">Appointment Requested!</h2>
+                                <p style="font-size: 18px; line-height: 1.6; margin-bottom: 32px;">
+                                    Thank you! We've received your request and will contact you within <strong>1
+                                        business day</strong> to confirm your appointment details.</p>
+                                <a href="index.html" class="btn btn-primary btn-lg" style="color: white;">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" style="margin-right: 8px;">
+                                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                                        <polyline points="12 19 5 12 12 5"></polyline>
+                                    </svg>
+                                    Back to Home
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Wizard Progress -->
+                        <div class="wizard-progress">
+                            <div class="progress-track">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
+                            <div class="step-indicators">
+                                <div class="step-dot active" data-step="1">1</div>
+                                <div class="step-dot" data-step="2">2</div>
+                                <div class="step-dot" data-step="3">3</div>
+                                <div class="step-dot" data-step="4">4</div>
+                            </div>
+                        </div>
+
+                        <!-- Step 1: Personal Information -->
+                        <div class="wizard-step active" data-step="1">
+                            <div class="form-section">
+                                <h2 class="form-section-title">Personal Information</h2>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="full-name">Full Name <span
+                                                class="req">*</span></label>
+                                        <input type="text" id="full-name" name="full_name" class="form-input"
+                                            placeholder="Jane Smith" required>
+                                        <span class="form-error" id="err-name">Please enter your full name</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">Email Address <span
+                                                class="req">*</span></label>
+                                        <input type="email" id="email" name="email" class="form-input"
+                                            placeholder="jane@email.com" required>
+                                        <span class="form-error" id="err-email">Please enter a valid email</span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="phone">Phone Number <span
+                                                class="req">*</span></label>
+                                        <input type="tel" id="phone" name="phone" class="form-input"
+                                            placeholder="(303) 555-0123" required>
+                                        <span class="form-error" id="err-phone">Please enter your phone number</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="dob">Date of Birth <span
+                                                class="req">*</span></label>
+                                        <input type="date" id="dob" name="dob" class="form-input" required>
+                                        <span class="form-error" id="err-dob">Please enter your date of birth</span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="patient-type">Patient Type <span
+                                                class="req">*</span></label>
+                                        <select id="patient-type" name="patient_type" class="form-select" required>
+                                            <option value="" disabled selected>Select...</option>
+                                            <option value="new">New Patient</option>
+                                            <option value="existing">Existing Patient</option>
+                                        </select>
+                                        <span class="form-error" id="err-patient">Please select patient type</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="preferred-contact">Preferred Contact
+                                            Method</label>
+                                        <select id="preferred-contact" name="preferred_contact" class="form-select">
+                                            <option value="email">Email</option>
+                                            <option value="phone">Phone Call</option>
+                                            <option value="sms">SMS/Text</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Medical History -->
+                        <div class="wizard-step" data-step="2">
+                            <div class="form-section">
+                                <h2 class="form-section-title">Medical History & Skin Concerns</h2>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="skin-type">Skin Type</label>
+                                        <select id="skin-type" name="skin_type" class="form-select">
+                                            <option value="" disabled selected>Select skin type...</option>
+                                            <option>Normal</option>
+                                            <option>Dry</option>
+                                            <option>Oily</option>
+                                            <option>Combination</option>
+                                            <option>Sensitive</option>
+                                            <option>Not Sure</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="allergies">Known Allergies</label>
+                                        <input type="text" id="allergies" name="allergies" class="form-input"
+                                            placeholder="List any allergies (optional)">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label class="form-label" for="medications">Current Medications</label>
+                                        <input type="text" id="medications" name="medications" class="form-input"
+                                            placeholder="List current medications (optional)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label" for="previous-treatments">Previous Aesthetic
+                                            Treatments?</label>
+                                        <select id="previous-treatments" name="previous_treatments" class="form-select">
+                                            <option value="" disabled selected>Select...</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                            <option>First Time</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-top: 16px;">
+                                    <label class="form-label">Are you currently pregnant or breastfeeding?</label>
+                                    <div class="radio-group">
+                                        <label class="radio-label">
+                                            <input type="radio" name="pregnant" value="yes">
+                                            <span class="radio-custom"></span>
+                                            Yes
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="pregnant" value="no" checked>
+                                            <span class="radio-custom"></span>
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Service Selection -->
+                        <div class="wizard-step" data-step="3">
+                            <div class="form-section">
+                                <h2 class="form-section-title">Service & Treatment Selection</h2>
+                                <div class="form-group">
+                                    <label class="form-label">What treatment are you interested in? <span
+                                            class="req">*</span></label>
+                                    <div class="service-picker" id="service-picker">
+                                        <div class="svc-pill" data-svc="Morpheus8">
+                                            <i class="fas fa-bolt"></i>
+                                            <span>Morpheus8</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="svc-pill" data-svc="Botox">
+                                            <i class="fas fa-syringe"></i>
+                                            <span>Botox</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="svc-pill" data-svc="Dermal Fillers">
+                                            <i class="fas fa-fill-drip"></i>
+                                            <span>Dermal Fillers</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="svc-pill" data-svc="VI Peels">
+                                            <i class="fas fa-flask"></i>
+                                            <span>VI Peels</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="svc-pill" data-svc="IPL Photo Facial">
+                                            <i class="fas fa-sun"></i>
+                                            <span>IPL Photo Facial</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="svc-pill" data-svc="RF Microneedling">
+                                            <i class="fas fa-magic"></i>
+                                            <span>RF Microneedling</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="svc-pill" data-svc="AviClear Acne">
+                                            <i class="fas fa-prescription-bottle-alt"></i>
+                                            <span>AviClear Acne</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="svc-pill" data-svc="Weight Loss">
+                                            <i class="fas fa-weight"></i>
+                                            <span>Weight Loss (GLP-1)</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="svc-pill" data-svc="PDO Thread Lift">
+                                            <i class="fas fa-arrows-alt-v"></i>
+                                            <span>PDO Thread Lift</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="svc-pill" data-svc="Consultation">
+                                            <i class="fas fa-user-md"></i>
+                                            <span>Free Consultation</span>
+                                            <svg class="svc-pill-check" width="14" height="14" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="3">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <span class="form-error" id="err-service">Please select at least one service</span>
+                                </div>
+                                <div class="form-group" style="margin-top: 24px;">
+                                    <label class="form-label" for="concerns">Primary Concerns / Goals (Optional)</label>
+                                    <textarea id="concerns" name="concerns" class="form-textarea" rows="4"
+                                        placeholder="Briefly describe your skin concerns or aesthetic goals..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Date & Time -->
+                        <div class="wizard-step" data-step="4">
+                            <div class="form-section">
+                                <h2 class="form-section-title">Preferred Date & Time</h2>
+                                <div class="form-group">
+                                    <label class="form-label">Select a Date <span class="req">*</span></label>
+                                    <div class="date-grid" id="date-grid"></div>
+                                    <span class="form-error" id="err-date">Please select a date</span>
+                                </div>
+                                <div class="form-group" style="margin-top: 24px;">
+                                    <label class="form-label">Available Times <span class="req">*</span></label>
+                                    <div class="time-grid" id="time-grid">
+                                        <div class="time-slot" data-time="9:00 AM">9:00 AM</div>
+                                        <div class="time-slot" data-time="10:00 AM">10:00 AM</div>
+                                        <div class="time-slot busy" data-time="11:00 AM">11:00 AM</div>
+                                        <div class="time-slot" data-time="12:00 PM">12:00 PM</div>
+                                        <div class="time-slot" data-time="1:00 PM">1:00 PM</div>
+                                        <div class="time-slot busy" data-time="2:00 PM">2:00 PM</div>
+                                        <div class="time-slot" data-time="3:00 PM">3:00 PM</div>
+                                        <div class="time-slot" data-time="4:00 PM">4:00 PM</div>
+                                        <div class="time-slot" data-time="5:00 PM">5:00 PM</div>
+                                    </div>
+                                    <span class="form-error" id="err-time">Please select a time</span>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="consent-row">
+                                    <div class="consent-check">
+                                        <input type="checkbox" id="consent" name="consent" required>
+                                        <span class="checkmark"></span>
+                                    </div>
+                                    <div class="consent-text">
+                                        I understand that this form submits a <strong>request</strong> — not a confirmed
+                                        appointment. I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms
+                                            of Service</a>. <span class="req">*</span>
+                                    </div>
+                                </div>
+                                <div class="consent-row" style="margin-top: 16px;">
+                                    <div class="consent-check">
+                                        <input type="checkbox" id="sms-opt" name="sms_opt">
+                                        <span class="checkmark"></span>
+                                    </div>
+                                    <div class="consent-text">
+                                        I consent to receive SMS reminders about my appointment.
+                                    </div>
+                                </div>
+                                <div class="emergency-note mt-3 p-3 rounded"
+                                    style="background: rgba(255,193,7,0.1); border-left: 3px solid #ffc107;">
+                                    <small class="text-warning">
+                                        <i class="fas fa-exclamation-triangle me-2"></i>
+                                        <strong>Emergency Notice:</strong> In case of a life-threatening emergency,
+                                        immediately call 911. This is a medical aesthetics clinic, not an emergency
+                                        facility.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wizard Navigation -->
+                        <div class="wizard-nav">
+                            <button type="button" class="btn btn-secondary" id="btn-prev" style="display: none;">
+                                <i class="fas fa-arrow-left me-2"></i>Back
+                            </button>
+                            <button type="button" class="btn btn-primary" id="btn-next">
+                                Next Step<i class="fas fa-arrow-right ms-2"></i>
+                            </button>
+                            <button type="submit" class="btn btn-primary btn-submit" id="btn-submit"
+                                style="display: none;">
+                                <i class="fas fa-calendar-check me-2"></i>Request Appointment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- RIGHT: Sidebar Summary -->
+                <aside class="booking-sidebar">
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-title">Your Booking Summary</div>
+                        <div class="summary-row">
+                            <span class="summary-label">Patient</span>
+                            <span class="summary-val empty" id="sum-name">Not entered</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Service</span>
+                            <span class="summary-val empty" id="sum-service">Not selected</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Date</span>
+                            <span class="summary-val empty" id="sum-date">Not selected</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Time</span>
+                            <span class="summary-val empty" id="sum-time">Not selected</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Type</span>
+                            <span class="summary-val empty" id="sum-type">Not selected</span>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-title">Clinic Information</div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>3000 E 1st Ave Unit 114<br>Denver, CO 80206</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt contact-icon"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p><a href="tel:3035550199">(303) 555-0199</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <div>
+                                <strong>Hours</strong>
+                                <p>Mon–Sat: 9:00 AM – 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <div class="sidebar-card-title">Why Choose Juicy Face</div>
+                        <div class="trust-list">
+                            <div class="trust-item">
+                                <div class="trust-icon">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <div>
+                                    <strong>Board-Certified MD</strong>
+                                    <span>Dr. Purnima Balla, 12+ years exp.</span>
+                                </div>
+                            </div>
+                            <div class="trust-item">
+                                <div class="trust-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div>
+                                    <strong>5.0★ Patient Rating</strong>
+                                    <span>From verified reviews</span>
+                                </div>
+                            </div>
+                            <div class="trust-item">
+                                <div class="trust-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div>
+                                    <strong>Physician-Operated</strong>
+                                    <span>Highest safety standards</span>
+                                </div>
+                            </div>
+                            <div class="trust-item">
+                                <div class="trust-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div>
+                                    <strong>Swedish Medical Affiliated</strong>
+                                    <span>Trusted medical network</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5" style="margin-top: 0;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="img/logo2.png" alt="" height="80px">
+                    </div>
+                    <p class="mt-3 text-white-50">Medical Esthetics in Denver, CO. Board-certified physician providing
+                        safe, effective aesthetic treatments since 2012.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="appointment.html">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Morpheus8</a></li>
+                        <li><a href="#">Botox</a></li>
+                        <li><a href="#">Fillers</a></li>
+                        <li><a href="#">VI Peels</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Make Appointment</h5>
+                    <p class="text-white-50"><i class="fas fa-phone-alt me-2"></i>(303) 555-0199</p>
+                    <p class="text-white-50"><i class="fas fa-envelope me-2"></i>info@juicyface.com</p>
+                    <p class="text-white-50"><i class="fas fa-clock me-2"></i>Mon-Sat: 9AM - 5PM</p>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white-50 small">&copy; 2024 Juicy Face Medical Esthetics. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-white-50 small">Physician-owned and operated</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 text-center">
+                    <p class="emergency-note small text-warning mb-0">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        In case of a life-threatening emergency, immediately call 911.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="appointment.js"></script>
+</body>
+
+</html>
